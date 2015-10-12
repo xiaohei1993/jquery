@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="renderer" content="webkit|ie-comp|ie-stand">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta http-equiv="Cache-Control" content="no-siteapp" />
+	<title>jQuery study</title>
+	<!-- jquery on sae cdn-->
+	<script src="http://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js"></script>
+	<!-- cdn无法加载则调用本地资源 -->
+	<script type="text/javascript">
+	!window.jQuery&&document.write(<script src="style/js/jquery-1.9.1.min.js><\/script>">);
+	</script>
+</head>
+<body>
+	<h2 class="h2-caption">超实用的jQuery代码</h2>
+	<button type="button" id="id-button-show">show</button>
+	<button type="button" id="id-button-hidden">hidden</button>
+
+	<script>
+		$(document).ready(function(){
+			$("#id-button-show").click(function(){
+				$("h2").show(1500);
+				});
+			$("#id-button-hidden").click(function(){
+				$("h2").hide(1000);
+				});
+		});
+	</script>
+</body>
+</html>
