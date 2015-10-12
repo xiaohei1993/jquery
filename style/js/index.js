@@ -1,0 +1,26 @@
+$(document).ready(function(){
+	$("#id-button-show").click(function(){
+		$("h2").show(1500);
+	});
+	$("#id-button-hidden").click(function(){
+		$("h2").hide(1000);
+	});
+	$("#id-button-showandhidden").click(function(){
+		$("h2").toggle(1500);
+	});
+	$("#id-button-fade-out").click(function(){
+		$("#id-div-fade").fadeOut("fast");
+	});
+	$("#id-button-fade-in").click(function(){
+		$("#id-div-fade").fadeIn(1500);
+	});
+	$("#id-button-fade-inout").click(function(){
+		$("#id-div-fade").fadeToggle("slow");
+	});
+	$("#button-slideToggle").click(function(){
+		$(this).next("h2").slideToggle("fast");
+	});
+	$("#animate").click(function(){
+		$(".animate").animate({left:'380px'});
+	});
+});
